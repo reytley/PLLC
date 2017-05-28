@@ -1,0 +1,30 @@
+.titre{
+	width : 100%;
+	text-align : center;
+	margin-bottom : 100px;
+font-size: 2em;
+ font-family : "open sans",  "calibri", "sans-serif";
+ color : white;
+padding-top : 100px;
+padding-bottom : 200px;
+}
+
+
+ul#liste_partenariat {
+    list-style-type : none; /* ne pas afficher les puces*/
+    text-align : center;
+    margin : 0;
+    padding : 0.1%;
+}
+
+ul#liste_partenariat li {
+
+    display : inline;
+    padding : 2.3%; /* Pour espacer les boutons entre eux */
+}
+
+#liste_partenariat img {
+    width: 13%;
+    height: auto;    
+    vertical-align : middle;
+}

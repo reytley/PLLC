@@ -1,0 +1,525 @@
+
+<!--https://openclassrooms.com/courses/apprenez-a-creer-votre-site-web-avec-html5-et-css3*
+index balise :
+<p></p> balise pour texte
+<div><div>balise dit conteneur
+<ul><li></li><ul> liste
+<a><a/> lien 
+</br> sert a faire un retour a la ligne  (regarder chapitre balise orpheline)
+<iframe></iframe> projection d'element d'un autre site
+<strong></strong> met en gras sert a signaler que le text et important
+<SCRIPT></SCRIPT> sert a inserer du script 
+
+
+    -->
+
+
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="style.css" />
+        <title>Penser les libertés de circulation</title>        
+		
+	<!-- slider image -->
+		<link rel="stylesheet" type="text/css" href="engine0/style.css" />
+		<script type="text/javascript" src="engine0/jquery.js"></script>
+
+		<!-- slider vidéos -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="canonical" href="http://www.math.sciences.univ-nantes.fr/~pllc2/"/> <!-- Mettre le nom du site internet ex: https://www.google.fr -->
+		<link rel="stylesheet" href="all.css" />
+		<script src="script.js"></script>
+	  <script src="js/jquery.js" type="text/javascript"></script><!-- Insertion de la bibliotheque jQuery -->
+ 
+    <script type="text/javascript" src="js/localscroll/jquery.localscroll.js"></script>
+    <script type="text/javascript" src="js/localscroll/jquery.scrollTo.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+  
+   <!-- Script liez au bouton de navigation -->
+<script>
+	$(document).ready(function() {
+		$('.zoom').on('click', function() { // Au clic sur un élément
+			var page = $(this).attr('href'); // Page cible
+			var speed = 3000; // Durée de l'animation (en ms)
+			$('html, body').animate( { scrollTop: $(page).offset().top }, speed ); // Go
+			return false;
+		});
+	});
+	
+</script>
+
+<script>
+	$(document).ready(function() {
+		$('.defilement').on('click', function() { // Au clic sur un élément
+			var page = $(this).attr('href'); // Page cible
+			var speed = 3000; // Durée de l'animation (en ms)
+			$('html, body').animate( { scrollTop: $(page).offset().top }, speed ); // Go
+			return false;
+		});
+	});
+	
+</script>
+
+
+
+	</head>
+    	
+	<body>   
+
+		<div id="en-tête">
+			<div>
+					<div id="titre_principal">
+						<h1>Penser Les Libertés De Circulation</h1>
+						<h2>Vers l'Europe Et En Europe</h2>
+						<h4>Conférence du Samedi 12 Mars 2016</h4><br>
+					</div>
+			</div>
+
+			<div id="Partenariat">
+						<ul id="liste_partenariat">
+							<li><a  href="http://www.lacimade.org/" target="_blank"><img class="dezoom" src="images/LaCimade.png" alt="Logo deLaCimade" /></a></li>
+							<li><a href="http://www.cens.univ-nantes.fr/" target="_blank"><img class="dezoom" src="images/cens.jpg" alt="Logo de cens" /></a></li>
+							<li><a href="http://dcs.univ-nantes.fr/" target="_blank"><img class="dezoom" id="img1" src="images/dcs.jpg" alt="Logo de dcs." /></a></li>
+							<li><a href="http://www.univ-nantes.fr/" target="_blank"><img class="dezoom" src="images/univ_nantes.png" alt="Logo de univ_nantes" /></a></li>
+							<li><a href="http://www.jetfm.asso.fr" target="_blank"><img class="dezoom" src="images/JetFM912.png" alt="Logo de JetFM912" /></a></li>
+							<li><a href="http://www.laligue.org/" target="_blank"><img class="dezoom" src="images/LigueEnseignement.png" alt="Logo de LigueEnseignement" /></a></li>
+							<li><a href="http://www.centreculturelfrancoitalien.org/" target="_blank"><img class="dezoom" src="images/ccfi.png" alt="Logo de ccfi" /></a></li>
+						</ul>
+			</div>
+			
+			<div id="Vpresentation">
+			
+			
+				<!-- du trailer de la journée-->
+			
+			
+			</div>
+		</div>
+		
+		
+		<div  id="bouton-navigation"><a href="#sommaire" class="defilement"><img  class="image-fixed" alt="fleche" src="images/fleche2.png" /></a></div>
+		
+		<div id="intro">
+			<p id="introPara">
+				Le droit à la mobilité n'est pas accessible à tout
+				être humain.<br><br>
+				L'enjeu est pourtant de taille : au cours des
+				vingt dernières années plus de 30 000
+				personnes ont perdu la vie en tentant de
+				franchir les frontières vers l'Europe. <br>
+				Les inégalités dans le droit à la mobilité
+				structurent la destinée de ceux qui bénéficient
+				plus ou moins de cette liberté.<br><br>
+				L'ouverture des frontières, sans parler de leur
+				abolition, semble aujourd'hui impensable pour
+				tous, pourtant elle a fait l'objet de réflexions,
+				de publications et de mobilisations. <br>
+				Pourquoi les résultats et les implications de tels travaux
+				sont-ils aussi méconnus ?<br><br>
+				Cette page y donne un accès et montre, s'il fallait encore en douter, que la folie n'est pas de penser les libertés de circulation mais bien de vouloir à tout prix empêcher les migrations.
+			</p>
+	
+	   </div> 
+	   
+
+
+	   
+		<div  id="sommaire">              
+				
+			<div class="SomConf"><!--SommaireConference-->
+												
+				<div class="SomConfHaut">
+					<div  class="separ"><a id="VintroBack" class="zoom" href="#Vintro"><p >Introduction à la journée<br>Penser les libertés de circulation</p></a></div>
+					<div class="separ"><a id="jycBack" class="zoom" href="#jyc"><p>Qui circule et comment en Europe ?</p></a></div>
+					<div class="separ"><a id="amBack" class="zoom" href="#am"><p>Liberté de circulation, défense du droit du travail et lutte contre le racisme : comment articuler ces trois objectifs ?</p></a></div>
+					<div class="separ"><a id="jycamBack" class="zoom" href="#jycam"><p>Interaction avec le public</p></a></div>
+				</div>
+			
+				<div class="SomConfBas">																		
+					<div class="separ"><a id="ocBack" class="zoom" href="#oc"><p>Les plus grandes manifestations pour laliberté de circulation sont à Calais, Lesbos, Melilla,etc. : plus de vingt ans que ça dure</p></a></div>
+					<div class="separ"><a id="pwbdccBack" class="zoom" href="#pwbdcc"><p>Analyse des dispositifs fabriquant la peur de l'autre</p></a></div>
+					<div class="separ"><a id="bensBack" class="zoom" href="#bens"><p>Pourquoi tant de gouvernements en Europe activent-ils la peur des migrants ?<br>Pourquoi les Européens se mettent-ils à avoir peur ?<br>Peut-on lutter contre la peur, individuelle et collective ?</p></a></div>
+					<div class="separ"><a id="ypjrBack" class="zoom" href="#ypjr"><p>Des propositions concrètes pour favoriser l'accès légal au territoire européen</p></a></div>
+				</div>
+				
+			</div>
+			
+			<div class="titre">			
+				<h1>INTERMÈDES</h1>
+				<h2>ARTISTIQUES</h2>		
+			</div>
+
+			<div id="SomIntermede">
+		
+				<div class="separ"><a id="mnBack" class="zoom" href="#mn"><p>Vincent Franjou<br>et<br>Vanessa Branchereau</p></a></div>
+				<div class="separ"><a id="nkBack" class="zoom" href="#nk"><p>Nina Kibuanda</p></a></div>
+				<div class="separ"><a id="cellBack" class="zoom" href="#cell"><p>Pierre Roba<br>et<br>Cellodan</p></a></div>
+			
+			</div>
+		
+			<div class="titre">
+			<h1>GALERIE</h1>
+			</div>
+			
+			<div class="somAnnex">
+					<a id="galerie" class="zoom" href="#bibli"></a>	
+			</div>
+			
+			
+		</div>	
+		
+		<div id="videos">
+		
+        	<div id="Vconf"><!--video Conf-->
+ 
+				<div>
+					<div class="titre-video" id="Vintro">Introduction de la journée<br>Penser les libertés de circulation</div><br>
+						<div class="auteur"> <strong>Maud Steuperaert</strong>, la CIMADE<br><strong>Cyrille Granget, Université de Nantes</strong><br><strong>Pascal Massiot</strong>, JetFM, chairman, animation de la journée</div>
+					<div class="contenu">
+						<iframe width="640" height="360" src="http://videos.univ-nantes.fr/player/index.php?f=http://videos.univ-nantes.fr/medias/2016/06/514989827302d042eadb458df60110d3.mp4&sd=&hd=http://videos.univ-nantes.fr/medias/2016/06/514989827302d042eadb458df60110d3.mp4&w=640&h=360&i=" frameborder="0" allowfullscreen></iframe>
+						<p><!-- En attente de texte --></p>
+					</div>
+				</div>
+				 
+				<div >
+					<div class="titre-video" id="jyc">
+						Qui circule et comment en Europe ?<br>
+						<div class="auteur"> <strong>Jean-Yves Carlier</strong><br> Juriste, Université catholique de Louvain, avocat</div>
+					</div>
+					<div class="contenu">	
+						<P><!-- En attente de texte     --></p><iframe width="640" height="360" src="http://videos.univ-nantes.fr/player/index.php?f=http://videos.univ-nantes.fr/medias/2016/06/8d53d83be3ca14d23f9aa09d8acef63d.mp4&sd=&hd=http://videos.univ-nantes.fr/medias/2016/06/8d53d83be3ca14d23f9aa09d8acef63d.mp4&w=640&h=360&i=" frameborder="0" allowfullscreen></iframe>				
+					</div>
+				</div>
+				   
+				   
+				<div >
+					<div class="titre-video" id="am">
+						Liberté de circulation, défense du droit du travail et lutte contre le racisme : comment articuler ces trois objectifs ?<br>
+						<div class="auteur"> <strong>Alain Morice</strong><br>Sociologue, URMIS, Université de Paris Descartes, membre Migreurop</div>
+					</div>
+					<div class="contenu">	
+						<iframe width="640" height="360" src="http://videos.univ-nantes.fr/player/index.php?f=http://videos.univ-nantes.fr/medias/2016/06/8c40c0d1e367719a1bbd7244bada788a.mp4&sd=&hd=http://videos.univ-nantes.fr/medias/2016/06/8c40c0d1e367719a1bbd7244bada788a.mp4&w=640&h=360&i=" frameborder="0" allowfullscreen></iframe><p>Quelles politiques peut-on envisager pour éviter que la
+						liberté de circulation des personnes ne débouche, d'une
+						part, sur un ultralibéralisme économique qui abaisserait le
+						niveau des conditions de travail, des rémunérations et de la
+						protection sociale et d'autre part, sur une expansion des
+						formes ouvertes de xénophobie et de racisme à l'égard des
+						divers groupes d'étrangers en migration ? Il s'agit d'examiner
+						le bien-fondé des craintes causées par le fantasme d'une
+						immigration de masse, et les moyens juridiques et politiques
+						d'en conjurer le risque.</p> 
+					</DIV>
+				</div>
+				
+				<div >
+					<div class="titre-video" id="jycam">Intéraction avec le public<br><div class="auteur">Jean-Yves Carlier et Alain Morice</div></div>
+					<div class="contenu"><p><!-- En attente de texte --> </p>	<iframe width="640" height="360" src="http://videos.univ-nantes.fr/player/index.php?f=http://videos.univ-nantes.fr/medias/2016/06/8530f641f3292c5c5537813f7be1c7d6.mp4&sd=&hd=http://videos.univ-nantes.fr/medias/2016/06/8530f641f3292c5c5537813f7be1c7d6.mp4&w=640&h=360&i=" frameborder="0" allowfullscreen></iframe> </div>
+				</div>
+				
+				
+				
+				<div >
+					<div class="titre-video" id="oc">
+						Les plus grandes manifestations pour laliberté de circulation sont à Calais, Lesbos, Melilla,etc. : <br>plus de vingt ans que ça dure<br>
+						<div class="auteur"> <strong>Olivier Clochard</strong><br>Géographe, Migrinter, Université de Poitier membre de Migreurop</div>
+					</div>
+					<div class="contenu">    	
+						<iframe width="640" height="360" src="http://videos.univ-nantes.fr/player/index.php?f=http://videos.univ-nantes.fr/medias/2016/06/fdc656e88a611ba2e03cee1c217179fb.mp4&sd=&hd=http://videos.univ-nantes.fr/medias/2016/06/fdc656e88a611ba2e03cee1c217179fb.mp4&w=640&h=360&i=" frameborder="0" allowfullscreen></iframe> <p> À partir de plusieurs réalités locales européennes (Calais,
+						Lesbos, Melilla, etc.), il s'agit de comprendre la manière
+						dont les migrants manifestent leur envie de circuler plus
+						librement, et en viennent - de diverses manières - à
+						infléchir le souhait irréalisable des gouvernements
+						européens d'aller « vers une meilleure gestion des flux
+						migratoires ».</p>
+					</div>
+					
+				</div>
+				 
+				 
+				<div >
+					<div class="titre-video" id="pwbdcc">Analyse des dispositifs fabriquant la peur de l'autre <br><div class="auteur"> <strong>Philippe Wannesson</strong>, auteur du
+					blog Passeurs d'hospitalité sur le quotidien des migrants
+					à Calais,  <br><strong>Bernard Dréano</strong>, président du Centre d'études et d'initiatives de
+					solidarité internationale (CEDETIM)<br> et cofondateur de
+					l'Assemblée européenne des citoyens (HCA-France), et<br><strong>Cécile Canut</strong>, sociolinguiste et documentariste,
+					Université Paris-Descartes </div></div>
+					<div class="contenu">	<p><!-- En attente de texte --></p><iframe width="640" height="360" src="http://videos.univ-nantes.fr/player/index.php?f=http://videos.univ-nantes.fr/medias/2016/06/2dfa312aac3377c00e805928837fce34.mp4&sd=http://videos.univ-nantes.fr/medias/2016/06/2dfa312aac3377c00e805928837fce34.mp4&hd=&w=640&h=360&i=" frameborder="0" allowfullscreen></iframe></div>
+				</div>
+				 
+				 
+				<div >
+					<div class="titre-video" id="bens">Pourquoi tant de gouvernements en Europe activent-ils la peur des migrants ?<br>Pourquoi les Européens se mettent-ils à avoir peur ?<br>Peut-on lutter contre la peur, individuelle et collective ?<br><div class="auteur"> <strong>Miguel Benasayag</strong><br> philosophe et psychanalyste.</div></div>
+					<div class="contenu">	<iframe width="640" height="360" src="http://videos.univ-nantes.fr/player/index.php?f=http://videos.univ-nantes.fr/medias/2016/06/8adbb1d02f792ba4a3e51de27d6846f5.mp4&sd=&hd=http://videos.univ-nantes.fr/medias/2016/06/8adbb1d02f792ba4a3e51de27d6846f5.mp4&w=640&h=360&i=" frameborder="0" allowfullscreen></iframe>
+					<p> <!-- En attente de texte --></p></div>
+				</div>
+				 
+				 
+				<div>
+					<div class="titre-video" id="ypjr">
+					Des propositions concrètes pour favoriser l'accès légal au territoire européen<br>
+						<div class="auteur">
+							<strong>Yves Pascouau</strong>, Docteur
+							en droit, directeur au European Policy Centre
+							(Bruxelles), chercheur associé senior à l'Institut Jacques
+							Delors (Paris),<br> éditeur du site europeanmigrationlaw.eu
+							(Nantes), et <br><strong>Jean Rousseau</strong>, président d'Emmaüs
+							International et de l'Organisation pour une Citoyenneté
+							Universelle
+						</div>
+					</div>
+					<div class="contenu">
+						<p><!-- En attente de texte --></p>	<iframe width="640" height="360" src="http://videos.univ-nantes.fr/player/index.php?f=http://videos.univ-nantes.fr/medias/2016/06/ccc3ded0bd5304486e3ccd94992eed6a.mp4&sd=http://videos.univ-nantes.fr/medias/2016/06/ccc3ded0bd5304486e3ccd94992eed6a.mp4&hd=&w=640&h=360&i=" frameborder="0" allowfullscreen></iframe>
+					</div>
+				</div>
+			 
+				</div>
+			
+			<div id="Vintermedes">
+            	<!--Intermesdes-->
+			<div>
+				<div class="titre-video" id="mn">
+					<strong>Vincent Franjou</strong><p class="auteur2"> Université de Nantes</p>
+					<strong>Vanessa Branchereau</strong>,<p class="auteur2">Interprète API Lsf, Service d'Interprètes Français/Langue des Signes Française </p>
+				</div>
+				<div>
+					<iframe width="100%" height="1280" src="http://videos.univ-nantes.fr/player/index.php?f=http://videos.univ-nantes.fr/medias/2016/06/70cce38e588c5afb085c7d882a6dbb90.mp4&sd=&hd=http://videos.univ-nantes.fr/medias/2016/06/70cce38e588c5afb085c7d882a6dbb90.mp4&w=100%&h=1280&i=" frameborder="0" allowfullscreen></iframe>
+				</div>
+			</div>
+
+			<div>
+				<div class="titre-video" id="nk">
+					<strong>Nina Kibuanda</strong><br>slammeur
+				</div>
+				<div>
+					<iframe width="100%" height="1280" src="http://videos.univ-nantes.fr/player/index.php?f=http://videos.univ-nantes.fr/medias/2016/06/a587bfab01fa65784b266da52e4235fc.mp4&sd=&hd=http://videos.univ-nantes.fr/medias/2016/06/a587bfab01fa65784b266da52e4235fc.mp4&w=100%&h=1280&i=" frameborder="0" allowfullscreen></iframe>
+				</div>
+			</div>
+
+			<div>								
+				<div class="titre-video" >
+					<strong>Pierre Roba</strong><br>
+					<p class="auteur2"> comédien</p><strong>Cellodan</strong><p class="auteur2">violoncelliste </p>
+				</div>
+				<div>
+					<iframe width="100%" height="1280" src="http://videos.univ-nantes.fr/player/index.php?f=http://videos.univ-nantes.fr/medias/2016/06/f1174bb22ad8a9e53d12660c0059446d.mp4&sd=&hd=http://videos.univ-nantes.fr/medias/2016/06/f1174bb22ad8a9e53d12660c0059446d.mp4&w=100%&h=1280&i=" frameborder="0" allowfullscreen></iframe>
+				</DIV>
+				</div>
+			</div>
+    	
+		</div>
+
+
+
+
+	<div id="bibli">	
+					
+		<div class="titre_bis">
+			Galerie						
+		</div><br>
+		
+		<!--iframe du diaporama-->
+		 <iframe width="640" height="360" src="http://videos.univ-nantes.fr/player/index.php?f=8265&w=640&h=360" frameborder="0" allowfullscreen></iframe>
+
+		
+		
+		
+		<!-- code de la galeire
+		
+		<div id="wowslider-container0">
+			<div class="ws_images">
+				<ul>
+					<li><img src="data0/images/1.jpg" alt="1" title="1" id="wows0_0"/></li>
+					<li><img src="data0/images/10.jpg" alt="10" title="10" id="wows0_1"/></li>
+					<li><img src="data0/images/10v.jpg" alt="10v" title="10v" id="wows0_2"/></li>
+					<li><img src="data0/images/11.jpg" alt="11" title="11" id="wows0_3"/></li>
+					<li><img src="data0/images/11v.jpg" alt="11v" title="11v" id="wows0_4"/></li>
+					<li><img src="data0/images/12.jpg" alt="12" title="12" id="wows0_5"/></li>
+					<li><img src="data0/images/12v.jpg" alt="12v" title="12v" id="wows0_6"/></li>
+					<li><img src="data0/images/13.jpg" alt="13" title="13" id="wows0_7"/></li>
+					<li><img src="data0/images/13v.jpg" alt="13v" title="13v" id="wows0_8"/></li>
+					<li><img src="data0/images/14.jpg" alt="14" title="14" id="wows0_9"/></li>
+					<li><img src="data0/images/14v.jpg" alt="14v" title="14v" id="wows0_10"/></li>
+					<li><img src="data0/images/15.jpg" alt="15" title="15" id="wows0_11"/></li>
+					<li><img src="data0/images/15v.jpg" alt="15v" title="15v" id="wows0_12"/></li>
+					<li><img src="data0/images/16.jpg" alt="16" title="16" id="wows0_13"/></li>
+					<li><img src="data0/images/16v.jpg" alt="16v" title="16v" id="wows0_14"/></li>
+					<li><img src="data0/images/17.jpg" alt="17" title="17" id="wows0_15"/></li>
+					<li><img src="data0/images/17v.jpg" alt="17v" title="17v" id="wows0_16"/></li>
+					<li><img src="data0/images/18.jpg" alt="18" title="18" id="wows0_17"/></li>
+					<li><img src="data0/images/19.jpg" alt="19" title="19" id="wows0_18"/></li>
+					<li><img src="data0/images/1v.jpg" alt="1v" title="1v" id="wows0_19"/></li>
+					<li><img src="data0/images/2.jpg" alt="2" title="2" id="wows0_20"/></li>
+					<li><img src="data0/images/20.jpg" alt="20" title="20" id="wows0_21"/></li>
+					<li><img src="data0/images/21.jpg" alt="21" title="21" id="wows0_22"/></li>
+					<li><img src="data0/images/22.jpg" alt="22" title="22" id="wows0_23"/></li>
+					<li><img src="data0/images/23.jpg" alt="23" title="23" id="wows0_24"/></li>
+					<li><img src="data0/images/24.jpg" alt="24" title="24" id="wows0_25"/></li>
+					<li><img src="data0/images/25.jpg" alt="25" title="25" id="wows0_26"/></li>
+					<li><img src="data0/images/26.jpg" alt="26" title="26" id="wows0_27"/></li>
+					<li><img src="data0/images/27.jpg" alt="27" title="27" id="wows0_28"/></li>
+					<li><img src="data0/images/2v.jpg" alt="2v" title="2v" id="wows0_29"/></li>
+					<li><img src="data0/images/3.jpg" alt="3" title="3" id="wows0_30"/></li>
+					<li><img src="data0/images/3v.jpg" alt="3v" title="3v" id="wows0_31"/></li>
+					<li><img src="data0/images/4.jpg" alt="4" title="4" id="wows0_32"/></li>
+					<li><img src="data0/images/4v.jpg" alt="4v" title="4v" id="wows0_33"/></li>
+					<li><img src="data0/images/5.jpg" alt="5" title="5" id="wows0_34"/></li>
+					<li><img src="data0/images/5v.jpg" alt="5v" title="5v" id="wows0_35"/></li>
+					<li><img src="data0/images/6.jpg" alt="6" title="6" id="wows0_36"/></li>
+					<li><img src="data0/images/6v.jpg" alt="6v" title="6v" id="wows0_37"/></li>
+					<li><img src="data0/images/7.jpg" alt="7" title="7" id="wows0_38"/></li>
+					<li><img src="data0/images/7v.jpg" alt="7v" title="7v" id="wows0_39"/></li>
+					<li><img src="data0/images/8.jpg" alt="8" title="8" id="wows0_40"/></li>
+					<li><img src="data0/images/8v.jpg" alt="8v" title="8v" id="wows0_41"/></li>
+					<li><a href="http://wowslider.net"><img src="data0/images/9.jpg" alt="jquery carousel" title="9" id="wows0_42"/></a></li>
+					<li><img src="data0/images/9v.jpg" alt="9v" title="9v" id="wows0_43"/></li>
+				</ul>
+			</div>
+			<div class="ws_thumbs">
+				<div>
+					<a href="#wows0_0" title="1"><img src="data0/tooltips/1.jpg" alt="" /></a>
+					<a href="#wows0_1" title="10"><img src="data0/tooltips/10.jpg" alt="" /></a>
+					<a href="#wows0_2" title="10v"><img src="data0/tooltips/10v.jpg" alt="" /></a>
+					<a href="#wows0_3" title="11"><img src="data0/tooltips/11.jpg" alt="" /></a>
+					<a href="#wows0_4" title="11v"><img src="data0/tooltips/11v.jpg" alt="" /></a>
+					<a href="#wows0_5" title="12"><img src="data0/tooltips/12.jpg" alt="" /></a>
+					<a href="#wows0_6" title="12v"><img src="data0/tooltips/12v.jpg" alt="" /></a>
+					<a href="#wows0_7" title="13"><img src="data0/tooltips/13.jpg" alt="" /></a>
+					<a href="#wows0_8" title="13v"><img src="data0/tooltips/13v.jpg" alt="" /></a>
+					<a href="#wows0_9" title="14"><img src="data0/tooltips/14.jpg" alt="" /></a>
+					<a href="#wows0_10" title="14v"><img src="data0/tooltips/14v.jpg" alt="" /></a>
+					<a href="#wows0_11" title="15"><img src="data0/tooltips/15.jpg" alt="" /></a>
+					<a href="#wows0_12" title="15v"><img src="data0/tooltips/15v.jpg" alt="" /></a>
+					<a href="#wows0_13" title="16"><img src="data0/tooltips/16.jpg" alt="" /></a>
+					<a href="#wows0_14" title="16v"><img src="data0/tooltips/16v.jpg" alt="" /></a>
+					<a href="#wows0_15" title="17"><img src="data0/tooltips/17.jpg" alt="" /></a>
+					<a href="#wows0_16" title="17v"><img src="data0/tooltips/17v.jpg" alt="" /></a>
+					<a href="#wows0_17" title="18"><img src="data0/tooltips/18.jpg" alt="" /></a>
+					<a href="#wows0_18" title="19"><img src="data0/tooltips/19.jpg" alt="" /></a>
+					<a href="#wows0_19" title="1v"><img src="data0/tooltips/1v.jpg" alt="" /></a>
+					<a href="#wows0_20" title="2"><img src="data0/tooltips/2.jpg" alt="" /></a>
+					<a href="#wows0_21" title="20"><img src="data0/tooltips/20.jpg" alt="" /></a>
+					<a href="#wows0_22" title="21"><img src="data0/tooltips/21.jpg" alt="" /></a>
+					<a href="#wows0_23" title="22"><img src="data0/tooltips/22.jpg" alt="" /></a>
+					<a href="#wows0_24" title="23"><img src="data0/tooltips/23.jpg" alt="" /></a>
+					<a href="#wows0_25" title="24"><img src="data0/tooltips/24.jpg" alt="" /></a>
+					<a href="#wows0_26" title="25"><img src="data0/tooltips/25.jpg" alt="" /></a>
+					<a href="#wows0_27" title="26"><img src="data0/tooltips/26.jpg" alt="" /></a>
+					<a href="#wows0_28" title="27"><img src="data0/tooltips/27.jpg" alt="" /></a>
+					<a href="#wows0_29" title="2v"><img src="data0/tooltips/2v.jpg" alt="" /></a>
+					<a href="#wows0_30" title="3"><img src="data0/tooltips/3.jpg" alt="" /></a>
+					<a href="#wows0_31" title="3v"><img src="data0/tooltips/3v.jpg" alt="" /></a>
+					<a href="#wows0_32" title="4"><img src="data0/tooltips/4.jpg" alt="" /></a>
+					<a href="#wows0_33" title="4v"><img src="data0/tooltips/4v.jpg" alt="" /></a>
+					<a href="#wows0_34" title="5"><img src="data0/tooltips/5.jpg" alt="" /></a>
+					<a href="#wows0_35" title="5v"><img src="data0/tooltips/5v.jpg" alt="" /></a>
+					<a href="#wows0_36" title="6"><img src="data0/tooltips/6.jpg" alt="" /></a>
+					<a href="#wows0_37" title="6v"><img src="data0/tooltips/6v.jpg" alt="" /></a>
+					<a href="#wows0_38" title="7"><img src="data0/tooltips/7.jpg" alt="" /></a>
+					<a href="#wows0_39" title="7v"><img src="data0/tooltips/7v.jpg" alt="" /></a>
+					<a href="#wows0_40" title="8"><img src="data0/tooltips/8.jpg" alt="" /></a>
+					<a href="#wows0_41" title="8v"><img src="data0/tooltips/8v.jpg" alt="" /></a>
+					<a href="#wows0_42" title="9"><img src="data0/tooltips/9.jpg" alt="" /></a>
+					<a href="#wows0_43" title="9v"><img src="data0/tooltips/9v.jpg" alt="" /></a>
+				</div>
+			</div>
+			<div class="ws_script" style="position:absolute;left:-99%"><a href="http://wowslider.com/vi">slider</a> by WOWSlider.com v8.7</div>
+			<div class="ws_shadow"></div>
+		</div>	
+		<script type="text/javascript" src="engine0/wowslider.js"></script>
+		<script type="text/javascript" src="engine0/script.js"></script>			-->
+		
+			
+	</div>
+	
+	
+	<div class="trailer">
+		<div class="titre_bis">
+			<p>Trailer de la journée</p>
+		</div>
+		<iframe src="https://player.vimeo.com/video/156566662?byline=0&portrait=0" width="640" height="360" frameborder="0" allowfullscreen></iframe>
+	</div>
+	
+    </body>
+	
+	
+	
+	
+	<footer>
+		<div class="pied1">
+		
+		
+		
+			<div class="pied2">
+			
+				<div id="pied3">
+					 <div >
+						<h3>Participants</h3>
+									<p><a href="https://passeursdhospitalites.wordpress.com/" target="_blank">P. Wannesson - Passeur d'hospitalité</a></p>
+						<p><a href="http://www.uclouvain.be/jean-yves.carlier" target="_blank"> JY Carlier</a></p>
+						<p><a href="http://www.soundaction.fr/artistes-hip-hop/slam/nina-kibuanda" target="_blank">Nina Kibuanda</a></p>
+						<p><a href="http://urmis.unice.fr/?Morice-Alain" target="_blank">Alain Morice</a></p>
+						<p><a href="http://www.mshs.univ-poitiers.fr/migrinter/index.php?text=membre/clochard" target="_blank">Olivier Clochard</a></p>
+						
+						<p><a href="http://www.math.sciences.univ-nantes.fr/~franjou/" target="_blank">Vincent Franjou</a></p>
+					
+							
+					</div>
+					<div>
+						<br/><br/>
+							<p><a href="http://danieltrutet.wix.com/cellodan" target="_blank">Cellodan</a></p>
+							<p><a href="https://blogs.mediapart.fr/philippe-wannesson/blog" target="_blank">Philippe Wannesson</a></p>
+							<p><a href="http://www.bastamag.net/Bernard-Dreano" target="_blank">Bernard Dréano</a></p>
+							<p><a href="https://blogs.mediapart.fr/cecile-canut/blog" target="_blank">Cécile Canut</a></p>
+							<p><a href="http://www.institutdelors.eu/011019-2391-Yves-Pascouau.html" target="_blank">Yves Pascouau</a></p>
+							<p><a href="https://fr.wikipedia.org/wiki/Jean_Rousseau_(Emma%C3%BCs)" target="_blank">Jean Rousseau</a></p>
+							<p><a href="https://fr.wikipedia.org/wiki/Miguel_Benasayag" target="_blank">Miguel Benasayag</a></p>
+					</div>
+					<div>
+						<h3>Suivez nous !</h3>
+						
+						<p><a href="http://www.lacimade.org/" target="_blank">LaCimade</a></p>
+						<p><a href="http://www.cens.univ-nantes.fr/" target="_blank">Cens</a></p>
+						<p><a href="http://www.cens.univ-nantes.fr/" target="_blank">Université de nantes</a></p>
+					</div>
+
+					<div>
+						<h3>Resources</h3>
+						<p><a href="http://www.mshs.univ-poitiers.fr/migrinter/" target="_blank">Migrinter</a></p>
+						<p><a href="http://www.etrangemiroir.org/" target="_blank">Etrange MIroir</a></p>
+						<p><a href="http://www.fal44.org/" target="_blank">FAL</a></p>
+						<p><a href="https://fr.wikipedia.org/wiki/Assembl%C3%A9e_europ%C3%A9enne_des_citoyens" target="_blank">Assemblée européenne des citoyens</a></p>
+						<p><a href="http://www.legoutdesautres.org/" target="_blank">Le goût des autres</a><p>
+						<p><a href="http://www.tribouille.fr/" target="_blank">La companie La Tribouille </a><p>
+						
+						
+					</div>
+
+
+					<div>
+						<h2>Partenaires</h2>
+										
+									
+									
+									<p><a href="http://dcs.univ-nantes.fr/" target="_blank">DCS</a><p>
+									<p><a href="http://www.univ-nantes.fr/" target="_blank">Université de nantes</a><p>
+									<p><a href="http://www.jetfm.asso.fr" target="_blank">JetFM912</a><p>
+									<p><a href="http://www.laligue.org/" target="_blank">Ligue Enseignement</a><p>
+									<p><a href="http://www.centreculturelfrancoitalien.org/" target="_blank">Centre Culturel Franco-Italien</a><p>
+							
+					</div>
+				</div>
+				<div class="credit"><a  href="credit.html" target="_blank">Crédits</a></div>
+			</div>
+			
+		</div>
+			
+	</footer>
+</html>
+
+ 
+
+
